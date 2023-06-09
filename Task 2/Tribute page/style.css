@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    padding: 20px;
+    margin-top: 48px;
+    margin-bottom: 23px;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 50px;
+    padding: 30px;
+}
+
+h4 {
+    padding-bottom: 20px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.biography {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-left: 180px;
+    margin-right: 180px;
+    align-items: center;
+    justify-content: center;
+}
+
+.biography h2 {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+
+.biography p {
+    margin-top: 50px;
+}
+
+h2 {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.mov {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 400px;
+    perspective: 1000px;
+    padding: 20px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #393939;
+    color: black;
+}
+
+.flip-card-back {
+    margin-top: 50px;
+    background-color: transparent;
+    color: rgb(39, 39, 39);
+    transform: rotateY(180deg);
+}
+
+.flip-card-inner p {
+    padding: 15px;
+}
+
+.buttons a {
+    text-decoration: none;
+    background-color: transparent;
+    color: #393939;
+}
+
+.buttons {
+    text-decoration: none;
+    margin-top: 25px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: transparent;
+    color: #393939;
+    transition-duration: 0.4s;
+}
+
+.buttons:hover {
+    background-color: #393939;
+}
+
+.buttons a:hover {
+    color: white;
+}
+
+.inter {
+    font-size: 25px;
+}
+
+#prestige{
+    margin-top: 10px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+hr {
+    width: 80%;
+    height: 3px;
+    border: 0 none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 80px;
+    margin-bottom: 90px;
+    background-color: #555;
+}
