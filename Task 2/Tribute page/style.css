@@ -180,3 +180,8 @@ hr {
     margin-bottom: 90px;
     background-color: #555;
 }
+
+.card_font {
+    font-size: 35px;
+    font-weight: 500;
+}
